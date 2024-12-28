@@ -1,18 +1,19 @@
 package Pattern;
 
-public class pattern_12 {
+public class pattern_22 {
     public static void main(String[] args) {
-        int iLength = 5, jLength = 5;
-        print_pattern(iLength, jLength);        //function call
+
+        int iLength = 5, jLength = 9;
+        print_pattern(iLength, jLength);     //function call
     }
 
+    //function definition
     private static void print_pattern(int iLength, int jLength) {
-        for (int i = 0; i < iLength; i++)               //outer loop for rows
-        {
+        for (int i = 0; i < iLength; i++) {
             for (int j = 0; j < jLength; j++) {
-                if (j-i >= 0)       //condition for printing stars
+                if (j-i >= 0 && j-i <= 4)        //condition for printing stars
                 {
-                    System.out.print("* ");
+                    System.out.print("*");
                 } else {
                     System.out.print(" ");
                 }
@@ -21,3 +22,6 @@ public class pattern_12 {
         }
     }
 }
+
+
+
