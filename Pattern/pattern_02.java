@@ -1,7 +1,5 @@
 package Pattern;
 
-import java.sql.SQLOutput;
-
 public class pattern_02 {
     public static void main(String[] args) {
         int ilength=5,jlength=5;
