@@ -1,16 +1,18 @@
 package Pattern;
 
-public class pattern_25 {
+public class Pattern_25 {
     public static void main(String[] args) {
         int iLength = 5, jLength = 5;
-        print_pattern(iLength, jLength);
+
+        myClass(iLength, jLength);
     }
 
-    private static void print_pattern(int iLength, int jLength) {
+    private static void myClass(int iLength, int jLength) {
+
         for (int i = 0; i < iLength; i++) {
             for (int j = 0; j < jLength; j++) {
                 if (j - i <= 0) {
-                    System.out.print((char)(65+j));
+                    System.out.print((char) (j + 65));
                 } else {
                     System.out.print(" ");
                 }
@@ -22,8 +24,8 @@ public class pattern_25 {
 
 /*
  * A
- * AB
- * ABC
- * ABCD
- * ABCDE
+ * BB
+ * CCC
+ * DDDD
+ * EEEEE
  * */
