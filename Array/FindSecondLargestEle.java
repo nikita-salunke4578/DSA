@@ -1,3 +1,4 @@
+//This approach is only useful when we have elements without duplicate value.
 package Array;
 
 public class FindSecondLargestEle {
