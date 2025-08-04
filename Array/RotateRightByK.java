@@ -7,13 +7,14 @@ import java.util.Arrays;
 public class RotateRightByK {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-        int k = 2;
+        int k = 20;
         RotateRightByK_fun(arr, k);
     }
 
     private static void RotateRightByK_fun(int[] arr, int k) {
         int n = arr.length;
 
+        k = k % n;
         for (int i = 0; i < k; i++) {
             int temp = arr[n - 1];
 
