@@ -3,7 +3,7 @@ package Array;
 
 public class MaxSumSubArrayKadanesAlgo {
     public static void main(String[] args) {
-        int[] num = {-2, -3, 4, -1, -2, 1, 5, -3};
+        int[] num = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         kadanes(num);
     }
 
@@ -14,11 +14,13 @@ public class MaxSumSubArrayKadanesAlgo {
         for (int i = 0; i < num.length; i++) {
             cs += num[i];
 
+            ms = Math.max(cs, ms);
+
             if (cs < 0) {
                 cs = 0;
             }
 
-            ms = Math.max(cs, ms);
+
         }
         System.out.println("Max Sum=" + ms);
     }
